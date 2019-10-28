@@ -51,7 +51,7 @@ So the basic code flow is (via cron every x minutes (default 10)):
 * display report and send report via email if set, and only if a ban or unban has taken place - no point sending an email every x minutes if nothing has happened
 
 
-Script is multi-site friendly, you just add the sites to an array at top of script and it loops through them. i currently have script checking 3 sites with no issues so far.
+Script is multi-site friendly, you just add the sites to an array at top of script and it loops through them. i currently have script checking 10 sites with no issues so far.
 
 
 Note: there are 2 variables that relate to the site(s):
