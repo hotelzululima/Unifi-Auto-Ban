@@ -12,7 +12,7 @@ $script_path = "/var/www/html/autoban/";
 /////////////////////////////////////////////
 
 // change to be the path to slooffmasters Client.php file,
-// i grabbed is zip file and unzipped to /var/www/html//autoban/uniapi
+// i grabbed is zip file and unzipped to /var/www/html/autoban/
 // adjust to suit where you place the Client.php file
 // you can of course place it in the same folder, but if you do, use the full path, not relative!
 
