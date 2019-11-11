@@ -310,7 +310,7 @@ Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified
 
 12.	Test the test page, open a browser and navigate to 
   
-  <url>/autoban/test.php
+  http://<url>/autoban/test.php
 
   All things going well, you should see the Php Info page
 
@@ -337,7 +337,7 @@ Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified
 
 18.	Run autoban.php manually via browser to setup ancillary files. Open a browser and navigate to:
 
-  <url>/autoban/autoban.php
+  http://<url>/autoban/autoban.php
 
   You should get a report page listing all sites 
 
