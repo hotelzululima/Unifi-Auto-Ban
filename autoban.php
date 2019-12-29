@@ -685,7 +685,6 @@ foreach (array_combine($sites_array, $sites_friendly_array) as $site => $sitefri
         $message .= "<table border='1' cellpadding='5'>";
         $message .= "<thead><tr><th>MAC Address</th><th>Banned at</th><th>Banned Until</th></tr><tbody>";
         write_to_log($log_file, "Banned MAC's:");
-        // uncomment the commented lines below to actually ban the mac address(es)
         foreach ($ban_array as $value) {
             // the line below is the actual line of code that does the ban
             $result = $unifi_connection->block_sta($value);
