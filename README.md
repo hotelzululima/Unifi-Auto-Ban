@@ -112,7 +112,7 @@ Some notes about my setup, i use nginx and lets encrypt for SSL bumping any web 
 3. Open and edit the lighttpd fastcgi-php.conf  file 
   
   nano /etc/lighttpd/conf-available/15-fastcgi-php.conf
-
+  
   Look for:
  	
     "bin-path" => "/usr/bin/php-cgi",
@@ -131,14 +131,15 @@ Some notes about my setup, i use nginx and lets encrypt for SSL bumping any web 
   Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified buffer? (Answering "No" will DISCARD changes.))
 
 4. Enable fastcgi and fastcgi-php (pess Enter after each line)
-
-  lighty-enable-mod fastcgi
+       
+    lighty-enable-mod fastcgi
+    
+    lighty-enable-mod fastcgi-php
   
-  lighty-enable-mod fastcgi-php
 
 5. Open and edit the php www.conf file
 
-  nano /etc/php/7.2/fpm/pool.d/www.conf
+nano /etc/php/7.2/fpm/pool.d/www.conf
 
 Look for:
 
@@ -287,6 +288,7 @@ Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified
 8. Set permissions on html folders:
 
   chown -R www-data:www-data /var/www/html/*
+
   chown -R 755 /var/www/html/*
   
 9. Create a test php page to confirm lighttpd and php are working fine:
@@ -332,6 +334,7 @@ Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified
 16.	As we have downloaded files, and not created them, you will probably need to issue the following commands to set the permissions on Client.php and autoban.php
 
   chown -R www-data:www-data /var/www/html/*
+  
   chown -R 755 /var/www/html/*
 
 17.	Unban any currently banned users before proceeding to the next step….
