@@ -289,7 +289,7 @@ Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified
 
   chown -R www-data:www-data /var/www/html/*
 
-  chown -R 755 /var/www/html/*
+  chmod 755 /var/www/html/*
   
 9. Create a test php page to confirm lighttpd and php are working fine:
 
@@ -335,7 +335,7 @@ Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified
 
   chown -R www-data:www-data /var/www/html/*
   
-  chown -R 755 /var/www/html/*
+  chmod 755 /var/www/html/*
 
 17.	Unban any currently banned users before proceeding to the next step….
 
