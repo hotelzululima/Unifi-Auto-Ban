@@ -130,9 +130,10 @@ Some notes about my setup, i use nginx and lets encrypt for SSL bumping any web 
 
   Save the file (CTRL and X, then Y, then press Enter at the prompt: Save modified buffer? (Answering "No" will DISCARD changes.))
 
-4. Enable fastcgi and fastcgi-php (pess Enter afetr each line)
+4. Enable fastcgi and fastcgi-php (pess Enter after each line)
 
   lighty-enable-mod fastcgi
+  
   lighty-enable-mod fastcgi-php
 
 5. Open and edit the php www.conf file
