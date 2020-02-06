@@ -195,6 +195,7 @@ function write_to_log($filename, $msg) {
 
 // function to read file into array
 function file_to_array($filename) {
+    global $log_file;
     $lines = file($filename, FILE_IGNORE_NEW_LINES);
     if (empty($lines)) {
         write_to_log($log_file, "File is empty or does not exist: " . $filename);
@@ -388,7 +389,7 @@ $message = "<html><body><h3><b>Script running from:</b></h3><p>" . $script_path;
 /////////////////////
 
 // oui URL  - from Wireshark
-$oui_url = 'https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob_plain;f=manuf;hb=HEAD';
+$oui_url = 'https://gitlab.com/wireshark/wireshark/raw/master/manuf';
 // temp oui file
 $oui_file_temp = $script_path . "manuf.txt";
 
